@@ -3,7 +3,7 @@ import { PhoneIcon } from "../../image/svg/PhoneIcon";
 import { EmailIcon } from "../../image/svg/Emailcon";
 import { AddressIcon } from "../../image/svg/AddressIcon";
 import { FacebookIcon } from "../../image/svg/FacebookIcon";
-import { InstagramIcon } from "../../image/svg/instagramIcon";
+import { InstIcon } from "../../image/svg/InstIcon";
 import { styles } from "./styles";
 
 export default function Contacts() {
@@ -70,7 +70,7 @@ export default function Contacts() {
             <FacebookIcon sx={styles.iconSNContacts} />
           </Link>
           <Link href="https://instagram.com">
-            <InstagramIcon sx={styles.iconSNContacts} />
+            <InstIcon sx={styles.iconSNContacts} />
           </Link>
         </Box>
       </Box>

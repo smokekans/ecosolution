@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { FacebookIcon } from "../../image/svg/FacebookIcon";
-import { InstagramIcon } from "../../image/svg/instagramIcon";
+import { InstIcon } from "../../image/svg/InstIcon";
 import PropTypes from "prop-types";
 import { BurgerArrowIcon } from "../../image/svg/BurgerArrowIcon";
 import { styles } from "./styles";
@@ -98,7 +98,7 @@ export default function ModalMenu({ open, handleClose }) {
               <FacebookIcon sx={styles.iconSNMenu} />
             </IconButton>
             <IconButton href="https://instagram.com">
-              <InstagramIcon sx={styles.iconSNMenu} />
+              <InstIcon sx={styles.iconSNMenu} />
             </IconButton>
           </Box>
         </Box>

@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import { LogoEcosolution } from "../../image/logo-company/LogoEcosolution";
 import { FacebookIcon } from "../../image/svg/FacebookIcon";
-import { InstagramIcon } from "../../image/svg/instagramIcon";
+import { InstIcon } from "../../image/svg/InstIcon";
 import { styles } from "./styles";
 import { ArrowUpIcon } from "../../image/svg/ArrowUpIcon";
 
@@ -59,7 +59,7 @@ export default function Footer() {
                 <FacebookIcon sx={styles.iconSocialNetwork} />
               </Link>
               <Link href="https://instagram.com">
-                <InstagramIcon sx={styles.iconSocialNetwork} />
+                <InstIcon sx={styles.iconSocialNetwork} />
               </Link>
             </Box>
           )}
@@ -100,7 +100,7 @@ export default function Footer() {
               <FacebookIcon sx={styles.iconSocialNetwork} />
             </Link>
             <Link href="https://instagram.com">
-              <InstagramIcon sx={styles.iconSocialNetwork} />
+              <InstIcon sx={styles.iconSocialNetwork} />
             </Link>
           </Box>
         </Box>

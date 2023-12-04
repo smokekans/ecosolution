@@ -1,6 +1,6 @@
 import { createSvgIcon } from "@mui/material";
 
-export const InstagramIcon = createSvgIcon(
+export const InstIcon = createSvgIcon(
   <svg
     width="24"
     height="24"
