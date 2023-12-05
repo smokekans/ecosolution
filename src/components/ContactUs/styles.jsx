@@ -1,4 +1,53 @@
 export const styles = {
+  generalBoxForm: {
+    bgcolor: (theme) => theme.palette.common.gray,
+    gridTemplateColumns: { tablet: "2 / 2" },
+    p: { tablet: "36px 24px", minMobile: "36px 12px" },
+    mt: { tablet: 0, minMobile: "24px" },
+  },
+  generalBoxContacts: {
+    gridTemplateColumns: "1 / 2",
+    display: "flex",
+    flexDirection: "column",
+    gap: "24px",
+  },
+  generalBoxContactUs: { my: { minMobile: "36px" } },
+  boxForm: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  containerCU: {
+    display: { tablet: "grid" },
+    mt: { minMobile: "36px" },
+    gridTemplateColumns: {
+      tablet: "1fr 1fr",
+    },
+    columnGap: { desktop: "48px", tablet: "24px" },
+  },
+  h2ContactUs: {
+    fontSize: { desktop: 36, tablet: 28 },
+    lineHeight: { desktop: "36px", tablet: "28px" },
+    textAlign: "center",
+  },
+  btnSubmit: {
+    borderRadius: (theme) => theme.shape.borderRadius,
+    border: (theme) => `1px solid ${theme.palette.primary.main}`,
+    width: { minMobile: "100px" },
+    height: { desktop: "39px" },
+    p: { desktop: "4px" },
+    pl: { desktop: "16px" },
+    ml: "auto",
+    textTransform: "none",
+    color: (theme) => theme.palette.text.primary,
+    "&:hover, &:focus": {
+      bgcolor: (theme) => theme.palette.primary.dark,
+      color: (theme) => theme.palette.text.secondary,
+    },
+  },
+  iconBtnSubmit: {
+    width: "32px",
+    height: "32px",
+  },
   boxContacts: {
     display: "flex",
     flexDirection: "column",

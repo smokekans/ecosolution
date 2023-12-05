@@ -8,14 +8,7 @@ import { styles } from "./styles";
 
 export default function Contacts() {
   return (
-    <Box
-      sx={{
-        gridTemplateColumns: "1 / 2",
-        display: "flex",
-        flexDirection: "column",
-        gap: "24px",
-      }}
-    >
+    <Box sx={styles.generalBoxContacts}>
       <Box>
         <Typography variant="subtitle2" sx={styles.titleContacts}>
           Phone:

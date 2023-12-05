@@ -1,7 +1,87 @@
 export const styles = {
+  boxTop: {
+    mt: "40px",
+    display: "grid",
+    gridAutoFlow: "column",
+    alignItems: "start",
+    gridTemplateColumns: {
+      tablet: "1fr 1fr",
+    },
+    columnGap: { desktop: "48px", tablet: "24px" },
+    mb: "16px",
+  },
+  boxDown: {
+    display: {
+      tablet: "grid",
+      minMobile: "flex",
+    },
+    textAlign: { tablet: "start", minMobile: "center" },
+    gridAutoFlow: "column",
+    gridTemplateColumns: {
+      desktop: "1fr 1fr",
+    },
+    columnGap: "48px",
+    flexDirection: { tablet: "row", minMobile: "column" },
+    alignItems: { tablet: "start", minMobile: "center" },
+  },
+  boxBtn: { display: "flex", alignItems: "center" },
+  boxBtnSN: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    mb: "24px",
+  },
+  box2fr: {
+    display: "flex",
+    alignItems: "center",
+    flexDirection: { tablet: "row", minMobile: "column" },
+    gap: "12px",
+  },
   boxIcons: {
     display: "flex",
     gap: "8px",
+  },
+  logo: {
+    width: "269px",
+    height: "40px",
+    cursor: "pointer",
+    fill: (theme) => theme.palette.primary.dark,
+    "&:hover": { fill: (theme) => theme.palette.primary.main },
+  },
+  address: {
+    fontSize: 16,
+    fontFamily: "Fira Sans",
+    fontWeight: "400",
+    lineHeight: "19.2px",
+    letterSpacing: "-0.64px",
+    mb: { tablet: 0, minMobile: "12px" },
+    color: (theme) => theme.palette.primary.dark,
+    textDecoration: "none",
+    transition: "color 0.3s ease",
+    "&:hover, &:focus": {
+      color: (theme) => theme.palette.primary.main,
+    },
+  },
+  email: {
+    fontSize: 16,
+    fontFamily: "Fira Sans",
+    fontWeight: "400",
+    lineHeight: "19.2px",
+    letterSpacing: "-0.64px",
+    color: (theme) => theme.palette.primary.dark,
+    textDecoration: "none",
+    transition: "color 0.3s ease",
+    "&:hover, &:focus": {
+      color: (theme) => theme.palette.primary.main,
+    },
+  },
+  markWeb: {
+    fontSize: 16,
+    fontFamily: "Fira Sans",
+    fontWeight: "400",
+    lineHeight: "19.2px",
+    letterSpacing: "-0.64px",
+    ml: { tablet: "auto", minMobile: 0 },
   },
   iconSocialNetwork: {
     width: "24px",
@@ -11,6 +91,21 @@ export const styles = {
     transition: "fill 0.3s ease, stroke 0.3s ease",
     "&:hover, &:focus": {
       fill: (theme) => theme.palette.primary.main,
+      stroke: (theme) => theme.palette.primary.main,
+    },
+  },
+  btnUp: {
+    ml: "auto",
+    width: "32px",
+    height: "32px",
+  },
+  iconBtnUp: {
+    width: "32px",
+    height: "32px",
+    fill: (theme) => theme.palette.primary.main,
+    stroke: (theme) => theme.palette.primary.dark,
+    "&:hover": {
+      fill: (theme) => theme.palette.primary.dark,
       stroke: (theme) => theme.palette.primary.main,
     },
   },

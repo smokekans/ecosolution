@@ -86,6 +86,7 @@ export const styles = {
   subtitle1: {
     color: (theme) => theme.palette.text.disabled,
   },
+  subtitle1ActiveStep: { width: "28px" },
   subtitle2: {
     fontSize: { desktop: "24px", tablet: "20px" },
     lineHeight: { desktop: "28.8px", tablet: "24px" },

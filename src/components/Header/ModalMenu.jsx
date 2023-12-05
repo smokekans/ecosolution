@@ -93,7 +93,7 @@ export default function ModalMenu({ open, handleClose }) {
               );
             })}
           </List>
-          <Box sx={{ display: "flex" }}>
+          <Box sx={styles.boxSN}>
             <IconButton href="https://facebook.com">
               <FacebookIcon sx={styles.iconSNMenu} />
             </IconButton>

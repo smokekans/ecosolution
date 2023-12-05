@@ -20,14 +20,7 @@ export default function FormContact() {
     resetForm();
   };
   return (
-    <Box
-      sx={{
-        bgcolor: (theme) => theme.palette.common.gray,
-        gridTemplateColumns: { tablet: "2 / 2" },
-        p: { tablet: "36px 24px", minMobile: "36px 12px" },
-        mt: { tablet: 0, minMobile: "24px" },
-      }}
-    >
+    <Box sx={styles.generalBoxForm}>
       <Formik
         initialValues={initialValue}
         validationSchema={ContactSchema}
@@ -35,12 +28,7 @@ export default function FormContact() {
       >
         {({ submitForm, isSubmitting }) => (
           <Form>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
+            <Box sx={styles.boxForm}>
               <Field
                 component={TextField}
                 variant="standard"
@@ -109,29 +97,8 @@ export default function FormContact() {
               <Button
                 disabled={isSubmitting}
                 onClick={submitForm}
-                sx={{
-                  borderRadius: (theme) => theme.shape.borderRadius,
-                  border: (theme) => `1px solid ${theme.palette.primary.main}`,
-                  width: { minMobile: "100px" },
-                  height: { desktop: "39px" },
-                  p: { desktop: "4px" },
-                  pl: { desktop: "16px" },
-                  ml: "auto",
-                  textTransform: "none",
-                  color: (theme) => theme.palette.text.primary,
-                  "&:hover, &:focus": {
-                    bgcolor: (theme) => theme.palette.primary.dark,
-                    color: (theme) => theme.palette.text.secondary,
-                  },
-                }}
-                endIcon={
-                  <ArrowRightIcon
-                    sx={{
-                      width: "32px",
-                      height: "32px",
-                    }}
-                  />
-                }
+                sx={styles.btnSubmit}
+                endIcon={<ArrowRightIcon sx={styles.iconBtnSubmit} />}
               >
                 Send
               </Button>

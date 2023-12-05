@@ -96,7 +96,7 @@ export default function Cases() {
 
         <Box sx={styles.changeStepsBox}>
           <Box sx={styles.stepsBox}>
-            <Typography variant="subtitle1" sx={{ width: "28px" }}>
+            <Typography variant="subtitle1" sx={styles.subtitle1ActiveStep}>
               {formatNumber(activeStep + 1)}
             </Typography>
             <Typography variant="subtitle1" sx={styles.subtitle1}>
